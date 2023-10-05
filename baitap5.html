@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let todoList=["đi ngủ lúc 11pm","về nhà lúc 8h tối"];
+        let n=prompt("")
+        if(n == "C"){
+            let n1 = prompt();
+            todoList.push(n1);
+            for(let i = 0; i < todoList.length; i++){
+            console.log(`${i}`, todoList[i]);
+            }
+        }else if(n == "R"){
+            for(let i = 0 ;i <todoList.length; i++ ){
+                console.log(`${i}`, todoList[i]);
+            }
+        }else if(n == "U"){
+            let n2 = prompt("Vị trí bạn muốn thêm");
+            let n3 = prompt("Nhập nội dung bạn muốn thêm")
+            todoList[n2]=n3 ;
+            for(let i = 0; i < todoList.length; i++){
+            console.log(`${i}`, todoList[i]);
+            }
+        }else if(n == "D"){
+            let n3 = prompt("nhập vị trí mà bạn muốn xóa")
+            todoList.splice(n3,1)
+            for(let i = 0; i < todoList.length; i++){
+            console.log(`${i}`, todoList[i]);
+            }
+        }
+    </script>
+</body>
+</html>
